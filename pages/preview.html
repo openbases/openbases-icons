@@ -227,10 +227,11 @@ h2 {
 
 <div class="m-p-g">
 
-        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div><br><hr>
+        <h2>Open Bases Icons</h2>
+        <div style="padding-top:20px; color:#666">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div><br><hr>
 
 	<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-{% for file in site.static_files reversed %}{% if file.path contains "/ic/" %}{% if file.path contains "png" %}
+{% for file in site.static_files %}{% if file.path contains "/ic/" %}{% if file.path contains "png" %}
 <img src="{{ site.github.url }}{{ file.path }}" data-full="{{ site.github.url }}{{ file.path }}" class="m-p-g__thumbs-img"></img>
 {% endif %}{% endif %}{% endfor %}
 	</div>
