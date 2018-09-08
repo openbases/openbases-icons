@@ -28,7 +28,42 @@ If you then parse each endpoint, you get the expected format! Each serves a list
 of icons, and that's it.
 
 ```bash
-
+$ curl https://openbases.github.io/openbases-icons/icons.txt
+/openbases-icons/flaticon/in-the-zoo/README.md
+/openbases-icons/flaticon/in-the-zoo/butterfly.svg
+/openbases-icons/flaticon/in-the-zoo/chameleon.svg
+/openbases-icons/flaticon/in-the-zoo/cheetah.svg
+/openbases-icons/flaticon/in-the-zoo/deer.svg
+/openbases-icons/flaticon/in-the-zoo/dolphin.svg
+/openbases-icons/flaticon/in-the-zoo/elephant.svg
+/openbases-icons/flaticon/in-the-zoo/flamingos.svg
+/openbases-icons/flaticon/in-the-zoo/giraffe.svg
+/openbases-icons/flaticon/in-the-zoo/gorilla.svg
+/openbases-icons/flaticon/in-the-zoo/hedgehog.svg
+/openbases-icons/flaticon/in-the-zoo/koala.svg
+/openbases-icons/flaticon/in-the-zoo/meerkat.svg
+/openbases-icons/flaticon/in-the-zoo/ostrich.svg
+/openbases-icons/flaticon/in-the-zoo/parrot.svg
+/openbases-icons/flaticon/in-the-zoo/penguin.svg
+/openbases-icons/flaticon/in-the-zoo/snake.svg
+/openbases-icons/flaticon/in-the-zoo/squirrel.svg
+/openbases-icons/flaticon/sea-life-collection/README.md
+/openbases-icons/flaticon/sea-life-collection/crab.svg
+/openbases-icons/flaticon/sea-life-collection/fish.svg
+/openbases-icons/flaticon/sea-life-collection/fish0.svg
+/openbases-icons/flaticon/sea-life-collection/fish1.svg
+/openbases-icons/flaticon/sea-life-collection/fish2.svg
+/openbases-icons/flaticon/sea-life-collection/fish3.svg
+/openbases-icons/flaticon/sea-life-collection/grampus.svg
+/openbases-icons/flaticon/sea-life-collection/hermit-crab.svg
+/openbases-icons/flaticon/sea-life-collection/lobster.svg
+/openbases-icons/flaticon/sea-life-collection/octopus.svg
+/openbases-icons/flaticon/sea-life-collection/sea-snake.svg
+/openbases-icons/flaticon/sea-life-collection/seahorse.svg
+/openbases-icons/flaticon/sea-life-collection/snail.svg
+/openbases-icons/flaticon/sea-life-collection/squid.svg
+/openbases-icons/flaticon/sea-life-collection/starfish.svg
+/openbases-icons/flaticon/sea-life-collection/stingray.svg
 ```
 
 ## Random Selection
