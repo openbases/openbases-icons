@@ -1,5 +1,9 @@
 # Open Bases Icons
 
+ - [Preview the icons](https://openbases.github.io/openbases-icons/preview)
+ - [Use the API](#open-bases-icons-api)
+ - [Create your own API](#create-your-own-icon-api)
+
 These fun, beautiful sets of images can be used as placeholders for generated
 PDFs and other content used by the openbases! The idea is to provide them in
 a separate repository so the primary repos don't need to each serve the files.
@@ -87,3 +91,14 @@ When using these icons you **must** give proper attribution to the author and in
 below. Thank you!
 
 <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+# Create Your Own Icon API
+
+You simply need to:
+
+ 1. fork this repository, and then put icons (svg and png supported) in subfolders
+of [ic](ic). E
+ 2. Edit the [_config.yml](_config.yml) to be specific for your Github repository and site.
+ 3. Push to Github, and turn on Github Pages to deploy from master.
+
+If you have any more questions, please [open an issue](https://www.github.com/openbases/openbases-icons) to ask!
