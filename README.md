@@ -25,52 +25,49 @@ $ curl https://openbases.github.io/openbases-icons/
 ```
 
 If you then parse each endpoint, you get the expected format! Each serves a list
-of icons, and that's it.
+of icons, and that's it. Here is a list of files ([icons.txt](https://openbases.github.io/openbases-icons/icons.txt)):
 
 ```bash
 $ curl https://openbases.github.io/openbases-icons/icons.txt
-/openbases-icons/flaticon/in-the-zoo/README.md
-/openbases-icons/flaticon/in-the-zoo/butterfly.svg
-/openbases-icons/flaticon/in-the-zoo/chameleon.svg
-/openbases-icons/flaticon/in-the-zoo/cheetah.svg
-/openbases-icons/flaticon/in-the-zoo/deer.svg
-/openbases-icons/flaticon/in-the-zoo/dolphin.svg
-/openbases-icons/flaticon/in-the-zoo/elephant.svg
-/openbases-icons/flaticon/in-the-zoo/flamingos.svg
-/openbases-icons/flaticon/in-the-zoo/giraffe.svg
-/openbases-icons/flaticon/in-the-zoo/gorilla.svg
-/openbases-icons/flaticon/in-the-zoo/hedgehog.svg
-/openbases-icons/flaticon/in-the-zoo/koala.svg
-/openbases-icons/flaticon/in-the-zoo/meerkat.svg
-/openbases-icons/flaticon/in-the-zoo/ostrich.svg
-/openbases-icons/flaticon/in-the-zoo/parrot.svg
-/openbases-icons/flaticon/in-the-zoo/penguin.svg
-/openbases-icons/flaticon/in-the-zoo/snake.svg
-/openbases-icons/flaticon/in-the-zoo/squirrel.svg
-/openbases-icons/flaticon/sea-life-collection/README.md
-/openbases-icons/flaticon/sea-life-collection/crab.svg
-/openbases-icons/flaticon/sea-life-collection/fish.svg
-/openbases-icons/flaticon/sea-life-collection/fish0.svg
-/openbases-icons/flaticon/sea-life-collection/fish1.svg
-/openbases-icons/flaticon/sea-life-collection/fish2.svg
-/openbases-icons/flaticon/sea-life-collection/fish3.svg
-/openbases-icons/flaticon/sea-life-collection/grampus.svg
-/openbases-icons/flaticon/sea-life-collection/hermit-crab.svg
-/openbases-icons/flaticon/sea-life-collection/lobster.svg
-/openbases-icons/flaticon/sea-life-collection/octopus.svg
-/openbases-icons/flaticon/sea-life-collection/sea-snake.svg
-/openbases-icons/flaticon/sea-life-collection/seahorse.svg
-/openbases-icons/flaticon/sea-life-collection/snail.svg
-/openbases-icons/flaticon/sea-life-collection/squid.svg
-/openbases-icons/flaticon/sea-life-collection/starfish.svg
-/openbases-icons/flaticon/sea-life-collection/stingray.svg
+https://openbases.github.io/openbases-icons/flaticon/sea-life-collection/stingray.svg
+https://openbases.github.io/openbases-icons/flaticon/sea-life-collection/starfish.svg
+https://openbases.github.io/openbases-icons/flaticon/sea-life-collection/squid.svg
+https://openbases.github.io/openbases-icons/flaticon/sea-life-collection/snail.svg
+https://openbases.github.io/openbases-icons/flaticon/sea-life-collection/seahorse.svg
+...
+https://openbases.github.io/openbases-icons/flaticon/in-the-zoo/cheetah.svg
+https://openbases.github.io/openbases-icons/flaticon/in-the-zoo/chameleon.svg
+https://openbases.github.io/openbases-icons/flaticon/in-the-zoo/butterfly.svg
 ```
+
+And here is the equivalent for [icons.json](https://openbases.github.io/openbases-icons/icons.json):
+
+```bash
+curl https://openbases.github.io/openbases-icons/icons.json
+
+["https://openbases.github.io/openbases-iconsflaticon/in-the-zoo/penguin.svg",
+ "https://openbases.github.io/openbases-icons/flaticon/sea-life-collection/stingray.svg",
+ "https://openbases.github.io/openbases-icons/flaticon/sea-life-collection/starfish.svg",
+...
+ "https://openbases.github.io/openbases-icons/flaticon/in-the-zoo/butterfly.svg",
+ "https://openbases.github.io/openbases-iconsflaticon/in-the-zoo/penguin.svg"]
+```
+
+If you then parse each endpoint, you get the expected format! Each serves a list
+of icons, and that's it. Here is a list of files ([icons.txt](https://openbases.github.io/openbases-icons/icons.txt)):
+
 
 ## Random Selection
 
-For a .circleci/config.yml you can write a recipe like this:
+### Bash
 
+To select an icon using bash:
 
+```bash
+OPENBASES_ICONS=(`curl https://openbases.github.io/openbases-icons/icons.txt`)
+OPENBASES_ICON=${OPENBASES_ICONS[$RANDOM % ${#OPENBASES_ICONS[@]} ]}
+echo "${OPENBASES_ICON}"
+```
 
 ## Icon Collections
 
