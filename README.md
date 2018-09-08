@@ -26,7 +26,8 @@ $ curl https://openbases.github.io/openbases-icons/
 {
   "icons": {
     "text": "https://openbases.github.io/openbases-icons/icons.txt",
-    "json": "https://openbases.github.io/openbases-icons/icons.json"
+    "json": "https://openbases.github.io/openbases-icons/icons.json",
+    "svg": "https://openbases.github.io/openbases-icons/svg.json"
    }
 }
 ```
@@ -36,15 +37,15 @@ of icons, and that's it. Here is a list of files ([icons.txt](https://openbases.
 
 ```bash
 $ curl https://openbases.github.io/openbases-icons/icons.txt
-https://openbases.github.io/openbases-icons/flaticon/sea-life-collection/stingray.svg
-https://openbases.github.io/openbases-icons/flaticon/sea-life-collection/starfish.svg
-https://openbases.github.io/openbases-icons/flaticon/sea-life-collection/squid.svg
-https://openbases.github.io/openbases-icons/flaticon/sea-life-collection/snail.svg
-https://openbases.github.io/openbases-icons/flaticon/sea-life-collection/seahorse.svg
+https://openbases.github.io/openbases-icons/ic/flaticon/sea-life-collection/stingray.png
+https://openbases.github.io/openbases-icons/ic/flaticon/sea-life-collection/starfish.png
+https://openbases.github.io/openbases-icons/ic/flaticon/sea-life-collection/squid.png
+https://openbases.github.io/openbases-icons/ic/flaticon/sea-life-collection/snail.png
+https://openbases.github.io/openbases-icons/ic/flaticon/sea-life-collection/seahorse.png
 ...
-https://openbases.github.io/openbases-icons/flaticon/in-the-zoo/cheetah.svg
-https://openbases.github.io/openbases-icons/flaticon/in-the-zoo/chameleon.svg
-https://openbases.github.io/openbases-icons/flaticon/in-the-zoo/butterfly.svg
+https://openbases.github.io/openbases-icons/ic/flaticon/in-the-zoo/cheetah.png
+https://openbases.github.io/openbases-icons/ic/flaticon/in-the-zoo/chameleon.png
+https://openbases.github.io/openbases-icons/ic/flaticon/in-the-zoo/butterfly.png
 ```
 
 And here is the equivalent for [icons.json](https://openbases.github.io/openbases-icons/icons.json):
@@ -52,17 +53,17 @@ And here is the equivalent for [icons.json](https://openbases.github.io/openbase
 ```bash
 curl https://openbases.github.io/openbases-icons/icons.json
 
-["https://openbases.github.io/openbases-iconsflaticon/in-the-zoo/penguin.svg",
- "https://openbases.github.io/openbases-icons/flaticon/sea-life-collection/stingray.svg",
- "https://openbases.github.io/openbases-icons/flaticon/sea-life-collection/starfish.svg",
-...
- "https://openbases.github.io/openbases-icons/flaticon/in-the-zoo/butterfly.svg",
- "https://openbases.github.io/openbases-iconsflaticon/in-the-zoo/penguin.svg"]
+["https://openbases.github.io/openbases-icons/ic/flaticon/in-the-zoo/penguin.png",
+ "https://openbases.github.io/openbases-icons/ic/openjournals/joss-logo.png",
+ "https://openbases.github.io/openbases-icons/ic/openjournals/jose-logo.png",
+ ...
+ "https://openbases.github.io/openbases-icons/ic/flaticon/in-the-zoo/chameleon.png",
+ "https://openbases.github.io/openbases-icons/ic/flaticon/in-the-zoo/butterfly.png",
+ "https://openbases.github.io/openbases-icons/ic/flaticon/in-the-zoo/penguin.png"]
 ```
 
 If you then parse each endpoint, you get the expected format! Each serves a list
 of icons, and that's it. Here is a list of files ([icons.txt](https://openbases.github.io/openbases-icons/icons.txt)):
-
 
 ## Random Selection
 
@@ -74,7 +75,7 @@ To select an icon using bash:
 OPENBASES_ICONS=(`curl https://openbases.github.io/openbases-icons/icons.txt`)
 OPENBASES_ICON=${OPENBASES_ICONS[$RANDOM % ${#OPENBASES_ICONS[@]} ]}
 echo "${OPENBASES_ICON}"
-wget ${OPENBASES_ICON} -O myicon.svg
+wget ${OPENBASES_ICON} -O myicon.png
 ```
 
 ## Icon Collections
