@@ -14,6 +14,22 @@ There is a simple API served by the repository to make it easy for you to
 programmatically get an icon! If you look at the base, you can see there
 is an endpoint for text, and for json:
 
+```bash
+$ curl https://openbases.github.io/openbases-icons/
+{
+  "icons": {
+    "text": "/openbases-icons/icons.txt",
+    "json": "/openbases-icons/icons.json"
+   }
+}
+```
+
+If you then parse each endpoint, you get the expected format! Each serves a list
+of icons, and that's it.
+
+```bash
+
+```
 
 ## Random Selection
 
