@@ -18,8 +18,8 @@ is an endpoint for text, and for json:
 $ curl https://openbases.github.io/openbases-icons/
 {
   "icons": {
-    "text": "/openbases-icons/icons.txt",
-    "json": "/openbases-icons/icons.json"
+    "text": "https://openbases.github.io/openbases-icons/icons.txt",
+    "json": "https://openbases.github.io/openbases-icons/icons.json"
    }
 }
 ```
@@ -67,6 +67,7 @@ To select an icon using bash:
 OPENBASES_ICONS=(`curl https://openbases.github.io/openbases-icons/icons.txt`)
 OPENBASES_ICON=${OPENBASES_ICONS[$RANDOM % ${#OPENBASES_ICONS[@]} ]}
 echo "${OPENBASES_ICON}"
+wget ${OPENBASES_ICON} -O myicon.svg
 ```
 
 ## Icon Collections
