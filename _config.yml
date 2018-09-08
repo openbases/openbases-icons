@@ -7,7 +7,7 @@ baseurl: "/openbases-icons" #important: start with /
 url: ""
 
 # An icon with a slightly higher chance of selection :)
-favorite: "flaticon/in-the-zoo/penguin.svg"
+favorite: "flaticon/in-the-zoo/penguin.png"
 
 # Build settings
 markdown: kramdown
