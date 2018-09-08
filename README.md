@@ -96,7 +96,7 @@ below. Thank you!
 
 You simply need to:
 
- 1. fork this repository, and then put icons (svg and png supported) in subfolders
+ 1. Fork this repository, and then put icons (svg and png supported) in subfolders
 of [ic](ic). E
  2. Edit the [_config.yml](_config.yml) to be specific for your Github repository and site.
  3. Push to Github, and turn on Github Pages to deploy from master.
