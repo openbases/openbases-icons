@@ -10,6 +10,13 @@ resource to make science a little more fun!
 
 ## Open Bases Icons API
 
+### Python API
+
+For a quick python wrapper to use the API, 
+see [openbases-python](https://openbases.github.io/openbases-python/html/usage.html#icons).
+
+### Command Line API
+
 There is a simple API served by the repository to make it easy for you to
 programmatically get an icon! If you look at the base, you can see there
 is an endpoint for text, and for json:
