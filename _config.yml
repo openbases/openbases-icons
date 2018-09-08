@@ -1,0 +1,15 @@
+### GENERAL SETTINGS ###
+
+# Site settings
+title: openbases-icons
+description: "Open Bases Icons"
+baseurl: "/openbases-icons" #important: start with /
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title
+
+exclude: 
+  - '.git'
+  - '_site'

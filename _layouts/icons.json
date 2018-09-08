@@ -1,0 +1,7 @@
+---
+title: OpenBases Icons
+layout: none
+---
+[{% for file in site.static_files reversed %}{% if file.path contains "/flaticon" %}{% if file.path contains "svg" %}
+"{{ site.baseurl }}{{ file.path }}",{% endif %}{% endif %}{% endfor %}
+"/flaticon/in-the-zoo/penguin.svg"]

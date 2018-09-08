@@ -1,0 +1,6 @@
+---
+title: OpenBases Icons
+layout: none
+---
+{% for file in site.static_files %}{% if file.path contains "/flaticon" %}{{ site.baseurl }}{{ file.path }}
+{% endif %}{% endfor %}

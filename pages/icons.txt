@@ -1,0 +1,5 @@
+---
+layout: icons-txt
+permalink: icons.txt
+title: OpenBases Icons
+---

@@ -8,10 +8,23 @@ coincides with a particular icon collection on the site. Specific links and
 attributions are contained within. Thank you Freepik for this invaluable
 resource to make science a little more fun!
 
+## Open Bases Icons API
+
+There is a simple API served by the repository to make it easy for you to
+programmatically get an icon! If you look at the base, you can see there
+is an endpoint for text, and for json:
+
+
+## Random Selection
+
+For a .circleci/config.yml you can write a recipe like this:
+
+
+
 ## Icon Collections
 
- - [In the Zoo](in-the-zoo)
- - [Sea Life Collection](sea-life-collection)
+ - [In the Zoo](flaticon/in-the-zoo)
+ - [Sea Life Collection](flaticon/sea-life-collection)
 
 When using these icons you **must** give proper attribution to the author and include the license
 below. Thank you!
