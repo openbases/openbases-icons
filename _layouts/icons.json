@@ -2,6 +2,6 @@
 title: OpenBases Icons
 layout: none
 ---
-["{{ site.github.url }}{{ site.favorite }}",{% for file in site.static_files reversed %}{% if file.path contains "/flaticon" %}{% if file.path contains "png" %}
+["{{ site.github.url }}{{ site.favorite }}",{% for file in site.static_files reversed %}{% if file.path contains "/ic/" %}{% if file.path contains "png" %}
 "{{ site.github.url }}{{ file.path }}",{% endif %}{% endif %}{% endfor %}
 "{{ site.github.url }}{{ site.favorite }}"]
