@@ -6,6 +6,9 @@ description: "Open Bases Icons"
 baseurl: "/openbases-icons" #important: start with /
 url: ""
 
+# An icon with a slightly higher chance of selection :)
+favorite: "flaticon/in-the-zoo/penguin.svg"
+
 # Build settings
 markdown: kramdown
 permalink: /:categories/:title
