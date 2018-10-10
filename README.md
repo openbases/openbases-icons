@@ -41,15 +41,16 @@ of icons, and that's it. Here is a list of files ([icons.txt](https://openbases.
 
 ```bash
 $ curl https://openbases.github.io/openbases-icons/icons.txt
-https://openbases.github.io/openbases-icons/ic/flaticon/sea-life-collection/stingray.png
-https://openbases.github.io/openbases-icons/ic/flaticon/sea-life-collection/starfish.png
-https://openbases.github.io/openbases-icons/ic/flaticon/sea-life-collection/squid.png
-https://openbases.github.io/openbases-icons/ic/flaticon/sea-life-collection/snail.png
-https://openbases.github.io/openbases-icons/ic/flaticon/sea-life-collection/seahorse.png
+https://openbases.github.io/openbases-icons/ic/openjournals/joss-logo.png
+https://openbases.github.io/openbases-icons/ic/openjournals/jose-logo.png
+https://openbases.github.io/openbases-icons/ic/iconarchive/tuxlets/zwartepiettux2.svg.png
+https://openbases.github.io/openbases-icons/ic/iconarchive/tuxlets/yellowtux2.svg.png
+https://openbases.github.io/openbases-icons/ic/iconarchive/tuxlets/wizzardtux2.svg.png
+https://openbases.github.io/openbases-icons/ic/iconarchive/tuxlets/wintertux2.svg.png
 ...
-https://openbases.github.io/openbases-icons/ic/flaticon/in-the-zoo/cheetah.png
-https://openbases.github.io/openbases-icons/ic/flaticon/in-the-zoo/chameleon.png
-https://openbases.github.io/openbases-icons/ic/flaticon/in-the-zoo/butterfly.png
+https://openbases.github.io/openbases-icons/ic/iconarchive/office-set/clipboard-icon.png
+https://openbases.github.io/openbases-icons/ic/iconarchive/office-set/briefcase-bag-icon.png
+https://openbases.github.io/openbases-icons/ic/iconarchive/office-set/archive-folders-icon.png
 ```
 
 And here is the equivalent for [icons.json](https://openbases.github.io/openbases-icons/icons.json):
@@ -58,12 +59,16 @@ And here is the equivalent for [icons.json](https://openbases.github.io/openbase
 curl https://openbases.github.io/openbases-icons/icons.json
 
 ["https://openbases.github.io/openbases-icons/ic/flaticon/in-the-zoo/penguin.png",
- "https://openbases.github.io/openbases-icons/ic/openjournals/joss-logo.png",
- "https://openbases.github.io/openbases-icons/ic/openjournals/jose-logo.png",
- ...
- "https://openbases.github.io/openbases-icons/ic/flaticon/in-the-zoo/chameleon.png",
- "https://openbases.github.io/openbases-icons/ic/flaticon/in-the-zoo/butterfly.png",
- "https://openbases.github.io/openbases-icons/ic/flaticon/in-the-zoo/penguin.png"]
+"https://openbases.github.io/openbases-icons/ic/openjournals/joss-logo.png",
+"https://openbases.github.io/openbases-icons/ic/openjournals/jose-logo.png",
+"https://openbases.github.io/openbases-icons/ic/iconarchive/tuxlets/zwartepiettux2.svg.png",
+"https://openbases.github.io/openbases-icons/ic/iconarchive/tuxlets/yellowtux2.svg.png",
+...
+"https://openbases.github.io/openbases-icons/ic/iconarchive/office-set/color-catalog-icon.png",
+"https://openbases.github.io/openbases-icons/ic/iconarchive/office-set/clipboard-icon.png",
+"https://openbases.github.io/openbases-icons/ic/iconarchive/office-set/briefcase-bag-icon.png",
+"https://openbases.github.io/openbases-icons/ic/iconarchive/office-set/archive-folders-icon.png",
+"https://openbases.github.io/openbases-icons/ic/flaticon/in-the-zoo/penguin.png"]
 ```
 
 If you then parse each endpoint, you get the expected format! Each serves a list
